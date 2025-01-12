@@ -1,9 +1,12 @@
 {
+  "hompage":"https://libralytic-bitebase.github.io/bitebase.app",
   "name": "back-end-config-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy","cd frontend && npm run build",
+    "deploy":"cd frontend && gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -68,7 +71,8 @@
     "mongoose": "latest",
     "passport-google-oauth20": "latest",
     "passport-facebook": "latest",
-    "supertest": "latest"
+    "supertest": "latest",
+    "gh-pages": "latest",
   },
   "devDependencies": {
     "@types/node": "^22",
